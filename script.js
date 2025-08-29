@@ -11,7 +11,7 @@ function convertToRoman(num) {
 
   //your code here
 
- let result = "";
+  let result = "";
 
   for (let [roman, value] of symbols) {
     while (num >= value) {
@@ -23,13 +23,9 @@ function convertToRoman(num) {
   return result;
 }
 
-// Test with console
-console.log(convertToRoman(798)); // DCCXCVIII
-
-// Test with alert (browser only)
-alert(convertToRoman(798));
-
-
+// Example test cases
+console.log(convertToRoman(14));   
+console.log(convertToRoman(798));  
 
 // do not edit below this line
 module.exports = convertToRoman;
